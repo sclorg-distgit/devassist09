@@ -1,0 +1,42 @@
+The %{scl_name} package provides DevAssistant 0.9 as a Software Collection.
+For more information about Software Collections, see the scl(1) man page.
+
+Installing the %{scl_name} Software Collection gets you DevAssistant 0.9
+with several assistants that make it easy for you to kick-start your
+projects using DTS 3 and the system Python interpreter.
+
+Usage: scl enable %{scl} 'da --help'
+
+Software Collections allow you to build and execute applications
+which are not located in the file system root hierarchy but instead are
+stored in an alternative location. The location is %{scl_prefix} in case
+of the % {scl_name} Software Collection.
+
+DevAssistant is a general purpose tool, featuring a powerful DSL used to
+write plugins. These plugins, called assistants, can help you perform
+various development-related tasks, such as kick-starting a project, working
+with source code management tools and IDEs, working with remote
+repositories, dependency installation, and more.
+
+Assistants provided by the devassist09 Software Collection can help you set
+up a basic structure of C, C++, Java (Maven) and Python projects. They also
+allow you to import these projects into Eclipse shipped with DTS 3. Each
+project you create includes basic source files and a pre-created git
+repository.
+
+When you want to start working with the %{scl_name} Software Collection, use
+the scl utility to enable the scl environment. See the scl(1) man page for
+usage.
+
+Examples:
+scl enable %{scl_name} 'da --help'
+  Run DevAssistant from the %{scl_name} Software Collection.
+
+scl enable %{scl_name} bash
+  Run an interactive shell with the %{scl_name} Software Collection enabled.
+
+scl enable %{scl_name} 'man da'
+  Show man pages for the da command (shortcut for devassistant), which
+  is a part of the %{scl_name} Software Collection.
+
+Report any bugs to <http://bugzilla.redhat.com>.

@@ -1,0 +1,6 @@
+%scl_package_override() %{expand:
+%global _root_python_sitearch @python_sitearch
+%global _root_python_sitelib @python_sitelib
+%global python_sitearch @devassist09_python_sitearch
+%global python_sitelib @devassist09_python_sitelib
+}
